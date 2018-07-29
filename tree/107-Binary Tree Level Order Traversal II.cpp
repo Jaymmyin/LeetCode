@@ -33,7 +33,7 @@ public:
                 }
             }
             if(!currList.empty())
-                result.push_back(currList);  //为啥会多出一个空的vector呢？
+                result.push_back(currList);  //为啥会多出一个空的vector呢？因为在最后结束的时候，下一行的nullptr会被放到currList统计为非空vector
         }
         
         std::reverse(result.begin(), result.end());
